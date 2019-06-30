@@ -11,6 +11,7 @@
     <Color x:Key="MediumDarkGray">#515151</Color>
     <Color x:Key="DarkDarkGray">#414141</Color>
     <Color x:Key="HardDarkGray">#313131</Color>
+    <Color x:Key="HeavyDarkGray">#212121</Color>
     <Color x:Key="Black">#000000</Color>
 
     <Color x:Key="WhiteBlueGray">#CBEEFF</Color>
@@ -69,6 +70,7 @@
     <SolidColorBrush x:Key="BgrLightBrush"              Color="{StaticResource DarkGray}" />
     <SolidColorBrush x:Key="BgrMainBrush"               Color="{StaticResource DarkDarkGray}" />
     <SolidColorBrush x:Key="BgrDarkBrush"               Color="{StaticResource HardDarkGray}" />
+    <SolidColorBrush x:Key="BgrAltDarkBrush"            Color="{StaticResource HeavyDarkGray}" />
     <SolidColorBrush x:Key="BgrFocusedBrush"            Color="{StaticResource MediumDarkGray}" />
     
 </ResourceDictionary>
