@@ -1,10 +1,14 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:WPF.MyFlatTheme">
-    
+
     <Style TargetType="{x:Type Window}" x:Key="BaseWindowStyle">
         <Setter Property="Background" Value="{StaticResource BgrMainBrush}"/>
         <Setter Property="WindowStyle" Value="ToolWindow"/>
     </Style>
-    
+
+    <Style TargetType="{x:Type Window}" x:Key="NormalWindowStyle" BasedOn="{StaticResource BaseWindowStyle}">
+        <Setter Property="WindowStyle" Value="SingleBorderWindow"/>
+    </Style>
+
 </ResourceDictionary>
