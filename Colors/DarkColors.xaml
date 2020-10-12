@@ -71,5 +71,10 @@
     <SolidColorBrush x:Key="BgrDarkBrush"               Color="{StaticResource HardDarkGray}" />
     <SolidColorBrush x:Key="BgrAltDarkBrush"            Color="{StaticResource HeavyDarkGray}" />
     <SolidColorBrush x:Key="BgrFocusedBrush"            Color="{StaticResource MediumDarkGray}" />
-    
+
+    <SolidColorBrush x:Key="MenuBackgroundBrush"          Color="{StaticResource DarkDarkGray}" />
+    <SolidColorBrush x:Key="MenuItemFocusedBrush"         Color="{StaticResource BlueGray0}" />
+    <SolidColorBrush x:Key="MenuItemPopupBackgroundBrush" Color="{StaticResource HardDarkGray}" />
+    <SolidColorBrush x:Key="MenuItemPopupFocusedBrush"    Color="{StaticResource BlueGray2}" />
+
 </ResourceDictionary>

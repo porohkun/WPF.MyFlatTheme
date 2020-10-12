@@ -3,6 +3,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Colors/DarkColors.xaml"/>
         <ResourceDictionary Source="Controls/BaseButton.xaml"/>
+        <ResourceDictionary Source="Controls/BaseMenu.xaml"/>
         <ResourceDictionary Source="Controls/BaseTextBlock.xaml"/>
         <ResourceDictionary Source="Controls/BaseToggleButton.xaml"/>
         <ResourceDictionary Source="Controls/BaseWindow.xaml"/>
