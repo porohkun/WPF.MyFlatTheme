@@ -1,7 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:WPF.MyFlatTheme">
-    
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
     <Color x:Key="White">#FFFFFF</Color>
     <Color x:Key="LightLightGray">#F1F1F1</Color>
     <Color x:Key="LightGray">#E1E1E1</Color>
@@ -44,7 +43,7 @@
     <SolidColorBrush x:Key="PlayBrush"                  Color="{StaticResource LightGreen}" />
     <SolidColorBrush x:Key="PlayFocusedBrush"           Color="{StaticResource LightLightGreen}" />
     <SolidColorBrush x:Key="PlayDisabledBrush"          Color="{StaticResource MediumGray}" />
-                                                        
+
     <SolidColorBrush x:Key="PauseBrush"                 Color="{StaticResource LightBlue}" />
     <SolidColorBrush x:Key="PauseFocusedBrush"          Color="{StaticResource LightLightBlue}" />
     <SolidColorBrush x:Key="PauseDisabledBrush"         Color="{StaticResource MediumGray}" />
