@@ -33,6 +33,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\ChromeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Controls\BaseWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -47,5 +51,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\CloseWindowCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\MaximizeResoreWindowCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\MinimizeWindowCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Misc\PathDecorator.cs" />
   </ItemGroup>
 </Project>

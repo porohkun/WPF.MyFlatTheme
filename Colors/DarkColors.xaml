@@ -31,6 +31,9 @@
     <Color x:Key="LightGreen">#8dd28a</Color>
     <Color x:Key="DarkGreen">#497646</Color>
 
+    <Color x:Key="LightRed">#F1707A</Color>
+    <Color x:Key="Red">#E81123</Color>
+
     <SolidColorBrush x:Key="WhiteBrush"                 Color="{StaticResource White}" />
     <SolidColorBrush x:Key="BlackBrush"                 Color="{StaticResource Black}" />
 
@@ -65,6 +68,12 @@
     <SolidColorBrush x:Key="ButtonSelectedBrush"        Color="{StaticResource BlueGray1}" />
     <SolidColorBrush x:Key="ButtonFocusedSelectedBrush" Color="{StaticResource BlueGray2}" />
     <SolidColorBrush x:Key="ButtonDisabledBrush"        Color="{StaticResource DarkDarkGray}" />
+
+    <SolidColorBrush x:Key="WinButtonFocusedBrush"      Color="{StaticResource DarkGray}" />
+    <SolidColorBrush x:Key="WinButtonPressedBrush"      Color="{StaticResource LightBlueGray1}" />
+
+    <SolidColorBrush x:Key="WinCloseButtonFocusedBrush" Color="{StaticResource Red}" />
+    <SolidColorBrush x:Key="WinCloseButtonPressedBrush" Color="{StaticResource LightRed}" />
 
     <SolidColorBrush x:Key="BgrLightBrush"              Color="{StaticResource DarkGray}" />
     <SolidColorBrush x:Key="BgrMainBrush"               Color="{StaticResource DarkDarkGray}" />

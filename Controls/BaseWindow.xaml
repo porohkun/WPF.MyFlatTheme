@@ -3,6 +3,7 @@
 
     <Style TargetType="{x:Type Window}" x:Key="BaseWindowStyle">
         <Setter Property="Background" Value="{StaticResource BgrMainBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource TextMainBrush}"/>
         <Setter Property="WindowStyle" Value="ToolWindow"/>
     </Style>
 
