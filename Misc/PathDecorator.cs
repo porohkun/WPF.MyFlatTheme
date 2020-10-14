@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Media;
 
 namespace WPF.Misc
 {
@@ -83,5 +84,25 @@ namespace WPF.Misc
         }
 
         #endregion //PathThickness
+
+        #region PathRenderTransform
+
+        public static readonly DependencyProperty PathRenderTransformProperty = DependencyProperty.RegisterAttached(
+            "PathRenderTransform",
+            typeof(Transform),
+            typeof(PathDecorator),
+            new PropertyMetadata(default(Transform)));
+
+        public static void SetPathRenderTransform(DependencyObject element, Transform value)
+        {
+            element.SetValue(PathRenderTransformProperty, value);
+        }
+
+        public static Transform GetPathRenderTransform(DependencyObject element)
+        {
+            return (Transform)element.GetValue(PathRenderTransformProperty);
+        }
+
+        #endregion //PathRenderTransform
     }
 }
