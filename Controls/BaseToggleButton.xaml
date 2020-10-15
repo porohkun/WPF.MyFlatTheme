@@ -81,6 +81,8 @@
         <Setter Property="BorderBrush" Value="{StaticResource BorderMainBrush}"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
@@ -95,6 +97,9 @@
                               StrokeThickness="{TemplateBinding misc:PathDecorator.PathThickness}"
                               Stroke="{TemplateBinding Foreground}"
                               RenderTransform="{TemplateBinding misc:PathDecorator.PathRenderTransform}"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              Margin="{TemplateBinding Padding}"
                               Stretch="Uniform"/>
                     </Border>
                 </ControlTemplate>
