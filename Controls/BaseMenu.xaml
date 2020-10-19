@@ -1,5 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:misc="clr-namespace:WPF.Misc">
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="../Pathes/Standard.xaml"/>
@@ -255,13 +256,18 @@
                                   VerticalAlignment="Center"
                                   HorizontalAlignment="Center"
                                   ContentSource="Icon" />
+                <Path x:Name="PathIcon"
+                      Style="{TemplateBinding misc:PathDecorator.PathStyle}"
+                      Width="{TemplateBinding misc:PathDecorator.PathWidth}"
+                      Height="{TemplateBinding misc:PathDecorator.PathHeight}"
+                      Fill="{TemplateBinding Foreground}"/>
                 <Border x:Name="Check"
                         Visibility="Collapsed"
                         Margin="6,0,6,0">
                     <Path x:Name="CheckMark"
                           Visibility="Hidden"
                           SnapsToDevicePixels="False"
-                          Fill="{StaticResource TextMainBrush}"
+                          Fill="{TemplateBinding Foreground}"
                           VerticalAlignment="Center"
                           HorizontalAlignment="Center"
                           Style="{StaticResource Checkmark}"/>
@@ -287,12 +293,13 @@
             <Trigger Property="IsCheckable" Value="True">
                 <Setter TargetName="Check" Property="Visibility" Value="Visible" />
                 <Setter TargetName="Icon" Property="Visibility" Value="Hidden" />
+                <Setter TargetName="PathIcon" Property="Visibility" Value="Hidden"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter TargetName="Border" Property="Background" Value="{StaticResource MenuItemPopupFocusedBrush}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="Foreground" Value="#ab14cc"/>
+                <Setter Property="Foreground" Value="{StaticResource TextDisabledBrush}"/>
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -326,7 +333,7 @@
                 <Path Grid.Column="3"
                       HorizontalAlignment="Center"
                       VerticalAlignment="Center"
-                      Fill="{StaticResource TextMainBrush}"
+                      Fill="{TemplateBinding Foreground}"
                       Data="M 0 0 L 0 7 L 4 3.5 Z">
                 </Path>
                 <Popup x:Name="Popup" Style="{StaticResource MenuPopup}"
@@ -370,6 +377,7 @@
     <!--================    Menu Item    ================-->
 
     <Style TargetType="{x:Type MenuItem}" x:Key="BaseMenuItem">
+        <Setter Property="Foreground" Value="{StaticResource TextMainBrush}"/>
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Style.Triggers>
             <Trigger Property="Role" Value="TopLevelHeader">
