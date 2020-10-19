@@ -49,7 +49,7 @@
     <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseButton}"/>
 
     <Style TargetType="{x:Type Button}" x:Key="PathButton">
-        <Setter Property="Foreground" Value="{StaticResource TextMainBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource PathMainBrush}"/>
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderBrush" Value="{StaticResource BorderMainBrush}"/>
         <Setter Property="BorderThickness" Value="0"/>
@@ -73,13 +73,13 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Foreground" Value="{StaticResource TextFocusedBrush}" />
+                <Setter Property="Foreground" Value="{StaticResource PathFocusedBrush}" />
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Foreground" Value="{StaticResource TextMainBrush}" />
+                <Setter Property="Foreground" Value="{StaticResource PathSelectedBrush}" />
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="Foreground" Value="{StaticResource TextDisabledBrush}" />
+                <Setter Property="Foreground" Value="{StaticResource PathDisabledBrush}" />
             </Trigger>
         </Style.Triggers>
     </Style>
