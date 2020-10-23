@@ -170,7 +170,7 @@
                             BorderThickness="0"
                             Background="{StaticResource MenuItemPopupBackgroundBrush}">
                         <ScrollViewer CanContentScroll="True" Padding="0,4" Style="{StaticResource MenuScrollViewer}">
-                            <StackPanel  KeyboardNavigation.DirectionalNavigation="Cycle" >
+                            <StackPanel KeyboardNavigation.DirectionalNavigation="Cycle" >
                                 <ContentPresenter />
                             </StackPanel>
                         </ScrollViewer>
@@ -193,6 +193,7 @@
                        Placement="Bottom"
                        IsOpen="{TemplateBinding IsSubmenuOpen}">
                     <Border SnapsToDevicePixels="True"
+                            Grid.IsSharedSizeScope="True"
                             Margin="5,0,5,5"
                             Background="{StaticResource MenuItemPopupBackgroundBrush}">
                         <Border.Effect>
@@ -279,7 +280,7 @@
                 <TextBlock x:Name="InputGestureText"
                            Grid.Column="2"
                            Text="{TemplateBinding InputGestureText}"
-                           Margin="5,2,0,2"
+                           Margin="13,2,0,2"
                            DockPanel.Dock="Right" />
             </Grid>
         </Border>
@@ -328,7 +329,7 @@
                 <TextBlock x:Name="InputGestureText"
                            Grid.Column="2"
                            Text="{TemplateBinding InputGestureText}"
-                           Margin="5,2,2,2"
+                           Margin="13,2,2,2"
                            DockPanel.Dock="Right" />
                 <Path Grid.Column="3"
                       HorizontalAlignment="Center"
@@ -341,6 +342,7 @@
                        HorizontalOffset="-2"
                        IsOpen="{TemplateBinding IsSubmenuOpen}">
                     <Border SnapsToDevicePixels="True"
+                            Grid.IsSharedSizeScope="True"
                             Margin="5,0,5,5"
                             Background="{StaticResource MenuItemPopupBackgroundBrush}">
                         <Border.Effect>
