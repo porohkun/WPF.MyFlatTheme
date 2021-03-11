@@ -2,8 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Controls/BaseButton.xaml"/>
+        <ResourceDictionary Source="Controls/BaseComboBox.xaml"/>
         <ResourceDictionary Source="Controls/BaseMenu.xaml"/>
         <ResourceDictionary Source="Controls/BaseRadioButton.xaml"/>
+        <ResourceDictionary Source="Controls/BaseTabControl.xaml"/>
         <ResourceDictionary Source="Controls/BaseTextBlock.xaml"/>
         <ResourceDictionary Source="Controls/BaseToggleButton.xaml"/>
         <ResourceDictionary Source="Controls/BaseWindow.xaml"/>
