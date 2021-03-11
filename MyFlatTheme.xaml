@@ -3,6 +3,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Controls/BaseButton.xaml"/>
         <ResourceDictionary Source="Controls/BaseComboBox.xaml"/>
+        <ResourceDictionary Source="Controls/BaseGroupBox.xaml"/>
         <ResourceDictionary Source="Controls/BaseMenu.xaml"/>
         <ResourceDictionary Source="Controls/BaseRadioButton.xaml"/>
         <ResourceDictionary Source="Controls/BaseTabControl.xaml"/>
