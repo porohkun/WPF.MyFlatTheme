@@ -57,6 +57,9 @@
     <SolidColorBrush x:Key="BorderFocusedSelectedBrush" Color="{StaticResource LightBlueGray2}" />
     <SolidColorBrush x:Key="BorderDisabledBrush"        Color="{StaticResource MediumGray}" />
 
+    <SolidColorBrush x:Key="HyperLinkMainBrush"         Color="{StaticResource DarkBlue}" />
+    <SolidColorBrush x:Key="HyperLinkFocusedBrush"      Color="{StaticResource LightBlue}" />
+
     <SolidColorBrush x:Key="TextMainBrush"              Color="{StaticResource LightLightGray}" />
     <SolidColorBrush x:Key="TextFocusedBrush"           Color="{StaticResource WhiteBlueGray}" />
     <SolidColorBrush x:Key="TextSelectedBrush"          Color="{StaticResource LightLightGray}" />
